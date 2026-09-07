@@ -68,19 +68,30 @@ web_modules/
 # dotenv environment variable files
 .env
 .env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 !.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
 
+# Turborepo & Vercel
+.turbo
+.vercel
+
 # Next.js build output
 .next
+.next/
 out
+out/
 
 # Nuxt.js build / generate output
 .nuxt
 dist
+build
 .output
 
 # Gatsby files
@@ -129,6 +140,8 @@ dist
 .pnpm-store
 
 # yarn v3
+.pnp
+.pnp.js
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -141,3 +154,8 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Misc & OS files
+.DS_Store
+Thumbs.db
+*.pem
